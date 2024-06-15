@@ -46,3 +46,5 @@ Open `index.html` in your web browser to view the Login/Sign-Up Page.
 
 Thank you for checking out this repository. Happy coding!
 
+Design inspiration from [Webleb](https://www.web-leb.com/)
+
