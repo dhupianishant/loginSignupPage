@@ -9,9 +9,6 @@ This repository contains a simple Login and Sign up page built using HTML and CS
 - [Installation](#installation)
 - [Usage](#usage)
 - [Folder Structure](#folder-structure)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
 
 ## Features
 
