@@ -1,0 +1,234 @@
+/* Import the Poppins font family from Google Fonts */
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900");
+
+/* General body styling */
+body {
+  font-family: "Poppins", sans-serif; /* Apply Poppins font */
+  font-weight: 300; /* Set font weight */
+  line-height: 1.7; /* Set line height */
+  color: #ffeba7; /* Set text color */
+  background-color: #1f2029; /* Set background color */
+}
+
+/* Remove underline on hover for links */
+a:hover {
+  text-decoration: none;
+}
+
+/* Styling for elements with the class 'link' */
+.link {
+  color: #ffeba7; /* Set link color */
+}
+
+/* Change link color on hover */
+.link:hover {
+  color: #c4c3ca;
+}
+
+/* Paragraph styling */
+p {
+  font-weight: 500; /* Set font weight */
+  font-size: 14px; /* Set font size */
+}
+
+/* Heading 4 styling */
+h4 {
+  font-weight: 600; /* Set font weight */
+}
+
+/* Span inside Heading 6 styling */
+h6 span {
+  padding: 0 20px; /* Set padding */
+  font-weight: 700; /* Set font weight */
+}
+
+/* Section styling */
+.section {
+  position: relative; /* Set position to relative */
+  width: 100%; /* Set width to 100% */
+  display: block; /* Display as block */
+}
+
+/* Full height class to ensure minimum height of 100vh */
+.full-height {
+  min-height: 100vh;
+}
+
+/* Hide checkboxes */
+[type="checkbox"]:checked,
+[type="checkbox"]:not(:checked) {
+  display: none;
+}
+
+/* Styling for the custom checkbox labels */
+.checkbox:checked + label,
+.checkbox:not(:checked) + label {
+  position: relative; /* Set position to relative */
+  display: block; /* Display as block */
+  text-align: center; /* Center text */
+  width: 60px; /* Set width */
+  height: 16px; /* Set height */
+  border-radius: 8px; /* Round the corners */
+  padding: 0; /* Remove padding */
+  margin: 10px auto; /* Center the label and add margin */
+  cursor: pointer; /* Change cursor to pointer */
+  background-color: #ffeba7; /* Set background color */
+}
+
+/* Styling for the custom checkbox icon */
+.checkbox:checked + label:before,
+.checkbox:not(:checked) + label:before {
+  position: absolute; /* Set position to absolute */
+  display: block; /* Display as block */
+  width: 36px; /* Set width */
+  height: 36px; /* Set height */
+  border-radius: 50%; /* Make the icon round */
+  color: #ffeba7; /* Set icon color */
+  background-color: #020305; /* Set background color */
+  font-family: "unicons"; /* Set font family */
+  content: "\eb4f"; /* Set content (icon) */
+  z-index: 20; /* Set z-index */
+  top: -10px; /* Position from the top */
+  left: -10px; /* Position from the left */
+  line-height: 36px; /* Set line height */
+  text-align: center; /* Center text */
+  font-size: 24px; /* Set font size */
+  transition: all 0.5s ease; /* Add transition */
+}
+
+/* Transform the checkbox icon when checked */
+.checkbox:checked + label:before {
+  transform: translateX(44px) rotate(-270deg); /* Move and rotate the icon */
+}
+
+/* 3D card container */
+.card-3d-wrap {
+  position: relative; /* Set position to relative */
+  width: 440px; /* Set width */
+  max-width: 100%; /* Ensure it doesn't exceed parent width */
+  height: 400px; /* Set height */
+  -webkit-transform-style: preserve-3d; /* Preserve 3D perspective */
+  transform-style: preserve-3d; /* Preserve 3D perspective */
+  perspective: 800px; /* Set perspective */
+  margin-top: 60px; /* Add top margin */
+}
+
+/* Wrapper for 3D card */
+.card-3d-wrapper {
+  width: 100%; /* Set width */
+  height: 100%; /* Set height */
+  position: absolute; /* Set position to absolute */
+  -webkit-transform-style: preserve-3d; /* Preserve 3D perspective */
+  transform-style: preserve-3d; /* Preserve 3D perspective */
+  transition: all 600ms ease-out; /* Add transition */
+}
+
+/* Front and back of the 3D card */
+.card-front,
+.card-back {
+  width: 100%; /* Set width */
+  height: 100%; /* Set height */
+  background-color: #2b2e38; /* Set background color */
+  background-image: url("/img/pattern_japanese-pattern-2_1_2_0-0_0_1__ffffff00_000000.png"); /* Set background image */
+  position: absolute; /* Set position to absolute */
+  border-radius: 6px; /* Round the corners */
+  -webkit-transform-style: preserve-3d; /* Preserve 3D perspective */
+  transform-style: preserve-3d; /* Preserve 3D perspective */
+}
+
+/* Transform the back of the card */
+.card-back {
+  transform: rotateY(180deg); /* Rotate the back of the card */
+}
+
+/* Rotate the 3D card when checkbox is checked */
+.checkbox:checked ~ .card-3d-wrap .card-3d-wrapper {
+  transform: rotateY(180deg); /* Rotate the card */
+}
+
+/* Center wrap styling */
+.center-wrap {
+  position: absolute; /* Set position to absolute */
+  width: 100%; /* Set width */
+  padding: 0 35px; /* Add padding */
+  top: 50%; /* Position from the top */
+  left: 0; /* Position from the left */
+  transform: translate3d(0, -50%, 35px) perspective(100px); /* Center the content */
+  z-index: 20; /* Set z-index */
+  display: block; /* Display as block */
+}
+
+/* Form group styling */
+.form-group {
+  position: relative; /* Set position to relative */
+  display: block; /* Display as block */
+  margin: 0; /* Remove margin */
+  padding: 0; /* Remove padding */
+}
+
+/* Styling for form elements */
+.form-style {
+  padding: 13px 20px; /* Add padding */
+  padding-left: 55px; /* Add padding to the left */
+  height: 48px; /* Set height */
+  width: 100%; /* Set width */
+  font-weight: 500; /* Set font weight */
+  border-radius: 4px; /* Round the corners */
+  font-size: 14px; /* Set font size */
+  line-height: 22px; /* Set line height */
+  letter-spacing: 0.5px; /* Add letter spacing */
+  outline: none; /* Remove outline */
+  color: #c4c3ca; /* Set text color */
+  background-color: #1f2029; /* Set background color */
+  border: none; /* Remove border */
+  -webkit-transition: all 200ms linear; /* Add transition */
+  transition: all 200ms linear; /* Add transition */
+  box-shadow: 0 4px 8px 0 rgba(21, 21, 21, 0.2); /* Add box shadow */
+}
+
+/* Focus and active state for form elements */
+.form-style:focus,
+.form-style:active {
+  border: none; /* Remove border */
+  outline: none; /* Remove outline */
+  box-shadow: 0 4px 8px 0 rgba(21, 21, 21, 0.2); /* Add box shadow */
+}
+
+/* Styling for input icons */
+.input-icon {
+  position: absolute; /* Set position to absolute */
+  top: 0; /* Position from the top */
+  left: 18px; /* Position from the left */
+  height: 48px; /* Set height */
+  font-size: 24px; /* Set font size */
+  line-height: 48px; /* Set line height */
+  text-align: left; /* Align text to the left */
+  -webkit-transition: all 200ms linear; /* Add transition */
+  transition: all 200ms linear; /* Add transition */
+}
+
+/* Button styling */
+.btn {
+  border-radius: 4px; /* Round the corners */
+  height: 44px; /* Set height */
+  font-size: 13px; /* Set font size */
+  font-weight: 600; /* Set font weight */
+  text-transform: uppercase; /* Transform text to uppercase */
+  -webkit-transition: all 200ms linear; /* Add transition */
+  transition: all 200ms linear; /* Add transition */
+  padding: 0 30px; /* Add padding */
+  letter-spacing: 1px; /* Add letter spacing */
+  display: -webkit-inline-flex; /* Display as inline-flex (for compatibility) */
+  display: -ms-inline-flexbox; /* Display as inline-flexbox (for compatibility) */
+  display: inline-flex; /* Display as inline-flex */
+  align-items: center; /* Align items to the center */
+  background-color: #ffeba7; /* Set background color */
+  color: #000000; /* Set text color */
+}
+
+/* Button hover state */
+.btn:hover {
+  background-color: #000000; /* Change background color */
+  color: #ffeba7; /* Change text color */
+  box-shadow: 0 8px 24px 0 rgba(16, 39, 112, 0.2); /* Add box shadow */
+}
